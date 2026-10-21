@@ -428,12 +428,11 @@ function Gallery() {
           Come worship, fellowship and grow with us.
         </p>
 
-        <a
-          href="/contact"
-          className="gallery-visit-button"
-        >
-          Plan Your Visit →
-        </a>
+        
+<a href="/ministries" className="primary-button">
+  Explore Our Ministries →
+</a>
+
 
       </section>
 

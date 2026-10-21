@@ -162,16 +162,10 @@ function Ministries() {
             Whatever your age or stage of life, there is a place for you
             at Jesus Family Church Australia.
           </p>
-
-          <a
-            href="/Contact"
-            className="ministries-contact-button"
-          >
-            Get in Touch →
-          </a>
-
-        </div>
-
+<a href="/get-in-touch" className="ministries-contact-button">
+  Get in Touch →
+</a>
+</div>
       </section>
 
     </div>

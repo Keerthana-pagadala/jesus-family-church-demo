@@ -8,6 +8,8 @@ import worshipPhoto from "../assets/homegallery/worship.jpg";
 import fellowshipPhoto from "../assets/homegallery/fellowship.jpg";
 import communityPhoto from "../assets/homegallery/community.jpg";
 import kidsMinistryPhoto from "../assets/homegallery/kids.webp";
+import youthMinistryPhoto from "../assets/gallery/youthmin.jpg";
+import womenMinistryPhoto from "../assets/gallery/womenmin.webp";
 import '../App.css'
 
 function Home() {
@@ -242,7 +244,7 @@ function Home() {
 
       </section>
 
-     ```jsx
+      
 {/* Events Section */}
 <section className="events-section" id="events">
   <div className="section-heading">
@@ -347,14 +349,11 @@ function Home() {
     </a>
   </div>
 </section>
-      {/* Ministries Section */}
+      
+{/* Ministries Section */}
 <section className="ministries-section" id="ministries">
-
   <div className="section-heading">
-
-    <p className="section-label">
-      GROW TOGETHER
-    </p>
+    <p className="section-label">GROW TOGETHER</p>
 
     <h2>
       Our <span>Ministries</span>
@@ -364,66 +363,63 @@ function Home() {
       There is a place for everyone at Jesus Family Church.
       Discover opportunities to connect, serve and grow in faith.
     </p>
-
   </div>
 
-
-  <div className="ministry-cards">
-
+  <div className="ministries-card-grid">
     {/* Kids Ministry */}
     <div className="ministry-card">
+      <div className="ministry-card-image">
+        <img src={kidsMinistryPhoto} alt="Children participating in Kids Ministry" />
+      </div>
 
-      <h3>
-        Kids Ministry
-      </h3>
-
-      <p>
-        Helping children discover God's love through Bible
-        teaching, activities, friendship and fun.
-      </p>
-
+      <div className="ministry-card-content">
+        <h3>Kids Ministry</h3>
+        <p>
+          Helping children discover God's love through Bible
+          teaching, activities, friendship and fun.
+        </p>
+      </div>
     </div>
-
 
     {/* Youth Ministry */}
     <div className="ministry-card">
+      <div className="ministry-card-image">
+        <img src={youthMinistryPhoto} alt="Young people participating in Youth Ministry" />
+      </div>
 
-      <h3>
-        Youth Ministry
-      </h3>
-
-      <p>
-        Encouraging young people to build friendships, grow
-        in faith and discover their purpose in Christ.
-      </p>
-
+      <div className="ministry-card-content">
+        <h3>Youth Ministry</h3>
+        <p>
+          Encouraging young people to build friendships, grow
+          in faith and discover their purpose in Christ.
+        </p>
+      </div>
     </div>
-
 
     {/* Men & Women Ministry */}
     <div className="ministry-card">
+      <div className="ministry-card-image">
+        <img src={womenMinistryPhoto} alt="Church members gathering for fellowship" />
+      </div>
 
-      <h3>
-        Men & Women Ministry
-      </h3>
-
-      <p>
-        Building meaningful relationships through fellowship,
-        prayer, Bible study, encouragement and serving together
-        as a church family.
-      </p>
-
+      <div className="ministry-card-content">
+        <h3>Men &amp; Women Ministry</h3>
+        <p>
+          Building meaningful relationships through fellowship,
+          prayer, Bible study, encouragement and serving together
+          as a church family.
+        </p>
+      </div>
     </div>
-    <div className="ministries-action">
-  <a href="/ministries" className="primary-button">
-    Explore All Ministries →
-  </a>
-</div>
-
-
   </div>
 
+  <div className="ministries-action">
+    <a href="/ministries" className="primary-button">
+      Explore All Ministries →
+    </a>
+  </div>
 </section>
+
       {/* Sermons Section */}
       <section className="sermons-section" id="sermons">
         <div className="section-heading">
@@ -756,9 +752,16 @@ function Home() {
                 Thomastown, Victoria
               </p>
 
-              <button className="primary-button">
-                Get Directions →
-              </button>
+              
+<a
+  href="https://www.google.com/maps/dir/?api=1&destination=1+Spring+St%2C+Thomastown+VIC+3074"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="primary-button"
+>
+  Get Directions →
+</a>
+
 
             </div>
 

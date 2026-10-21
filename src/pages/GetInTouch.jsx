@@ -345,12 +345,9 @@ async function handleSubmit(event) {
           you, and welcome you into our church family.
         </p>
 
-        <a
-          href="mailto:jesusfamilychurchaustralia@gmail.com"
-          className="contact-visit-button"
-        >
-          Get in Touch
-        </a>
+        <a href="/ministries" className="ministries-contact-button">
+  Explore Our Ministries →
+</a>
       </section>
 
     </div>

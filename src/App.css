@@ -906,343 +906,32 @@ button {
   font-weight: 700;
 }
 
-/* =========================================================
-   MINISTRIES PAGE
-========================================================= */
-
-.ministries-hero {
-  position: relative;
-  min-height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 7%;
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.38),
-      rgba(0, 0, 0, 0.38)
-    ),
-    url("https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1800&q=85");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  overflow: hidden;
-}
-
-.ministries-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.08);
-}
-
-.ministries-hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 900px;
-  color: white;
-}
-
-.ministries-label {
-  margin: 0 0 18px;
-  color: white;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.ministries-hero h1 {
-  margin: 0 0 20px;
-  color: white;
-  font-size: clamp(55px, 8vw, 95px);
-  line-height: 1;
-  font-weight: 700;
-}
-
-.ministries-hero-content > p:last-child {
-  margin: 0;
-  color: white;
-  font-size: clamp(18px, 3vw, 27px);
-  line-height: 1.6;
-}
-
-
-/* =========================================================
-   INTRO
-========================================================= */
-
-.ministries-intro {
-  padding: 105px 0;
-  background: #fffaf5;
-  text-align: center;
-}
-
-.ministries-container {
-  width: min(1120px, 90%);
-  margin: 0 auto;
-}
-
-.ministries-intro .ministries-container {
-  max-width: 850px;
-}
-
-.ministries-intro .section-label {
-  color: #c62828;
-  margin-bottom: 15px;
-}
-
-.ministries-intro h2 {
-  margin: 0 0 25px;
-  color: #302b35;
-  font-size: clamp(36px, 5vw, 55px);
-  line-height: 1.15;
-}
-
-.ministries-intro h2 span {
-  color: #c62828;
-}
-
-.ministries-intro > .ministries-container > p:last-child {
-  margin: 0 auto;
-  color: #625b5b;
-  font-size: 17px;
-  line-height: 1.9;
-}
-
-
-/* =========================================================
-   MINISTRY CARDS
-========================================================= */
-
-.ministries-cards-section {
-  padding: 100px 0;
-  background: #f7ead0;
-}
-
-.ministries-card-grid {
+/* Home page: display ministry cards one below another */
+.ministries-section .ministries-card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 28px;
+  width: min(700px, 90%);
+  margin: 0 auto;
 }
 
-.ministry-card {
-  display: block;
-  overflow: hidden;
-  background: white;
-  border-radius: 25px;
-  color: inherit;
-  text-decoration: none;
-  box-shadow: 0 18px 45px rgba(70, 45, 35, 0.10);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.ministries-section .ministry-card {
+  width: 100%;
+  height: auto;
 }
 
-.ministry-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 28px 55px rgba(70, 45, 35, 0.16);
-}
-
-.ministry-card-image {
-  position: relative;
-  height: 270px;
+.ministries-section .ministry-card-image {
+  width: 100%;
+  height: 260px;
   overflow: hidden;
 }
 
-.ministry-card-image img {
+.ministries-section .ministry-card-image img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  transition: transform 0.5s ease;
 }
-
-.ministry-card:hover .ministry-card-image img {
-  transform: scale(1.05);
-}
-
-.ministry-card-number {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: white;
-  color: #c62828;
-  font-size: 15px;
-  font-weight: 700;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-.ministry-card-content {
-  padding: 28px 28px 30px;
-}
-
-.ministry-card-content p {
-  margin: 0 0 9px;
-  color: #c62828;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-}
-
-.ministry-card-content h3 {
-  margin: 0 0 20px;
-  color: #302b35;
-  font-size: 26px;
-}
-
-.ministry-card-content span {
-  color: #c62828;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.ministry-card-description {
-  color: #625b5b;
-  font-size: 15px;
-  line-height: 1.7;
-  margin-top: -8px;
-  margin-bottom: 20px;
-}
-
-
-/* =========================================================
-   MINISTRY DETAILS
-========================================================= */
-
-.ministry-detail {
-  padding: 110px 0;
-  background: #fffaf5;
-}
-
-.ministry-detail-light {
-  background: #fcebed;
-}
-
-.ministry-detail-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-
-.ministry-detail-grid.reverse {
-  direction: rtl;
-}
-
-.ministry-detail-grid.reverse > * {
-  direction: ltr;
-}
-
-.ministry-detail-image {
-  overflow: hidden;
-  border-radius: 28px;
-  background: white;
-  box-shadow: 0 25px 55px rgba(70, 45, 35, 0.13);
-}
-
-.ministry-detail-image img {
-  width: 100%;
-  height: 460px;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.ministry-detail-image:hover img {
-  transform: scale(1.04);
-}
-
-.ministry-detail-content {
-  max-width: 570px;
-}
-
-.ministry-detail-content .section-label {
-  margin-bottom: 15px;
-  color: #c62828;
-}
-
-.ministry-detail-content h2 {
-  margin: 0 0 25px;
-  color: #302b35;
-  font-size: clamp(36px, 5vw, 54px);
-  line-height: 1.15;
-}
-
-.ministry-detail-content h2 span {
-  color: #c62828;
-}
-
-.ministry-detail-content p:not(.section-label) {
-  margin: 0 0 20px;
-  color: #625b5b;
-  font-size: 17px;
-  line-height: 1.9;
-}
-
-
-/* =========================================================
-   COMMUNITY CTA
-========================================================= */
-
-.ministries-community {
-  padding: 110px 0;
-  background: #302b35;
-  text-align: center;
-}
-
-.ministries-community-container {
-  width: min(800px, 90%);
-  margin: 0 auto;
-}
-
-.ministries-community .section-label {
-  margin-bottom: 15px;
-  color: #f7caca;
-}
-
-.ministries-community h2 {
-  margin: 0 0 20px;
-  color: white;
-  font-size: clamp(38px, 5vw, 56px);
-  line-height: 1.15;
-}
-
-.ministries-community h2 span {
-  display: block;
-  color: #f7caca;
-}
-
-.ministries-community-container > p:not(.section-label) {
-  max-width: 650px;
-  margin: 0 auto 30px;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-.ministries-contact-button {
-  display: inline-block;
-  padding: 15px 32px;
-  border-radius: 30px;
-  background: #c62828;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.ministries-contact-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(198, 40, 40, 0.30);
-}
-
-
-
 
 /* MOBILE HEADER AND SIDE MENU */
 
@@ -5829,13 +5518,7 @@ button {
 
 .about-page {
   background: #fffdf9;
-  color: #3d3532;
-}
-
-
-/* =========================================================
-   ABOUT HERO
-========================================================= */
+  color: #3d3532;}
 
 /* =========================================================
    ABOUT HERO
@@ -8724,6 +8407,66 @@ button {
   .footer-social-icons a {
     width: 40px;
     height: 40px;
+  }
+}
+
+/* =========================================================
+   HOME PAGE MINISTRY CARDS — SAFE, SCOPED STYLES
+========================================================= */
+
+.ministries-section .ministries-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.ministries-section .ministry-card {
+  height: 100%;
+  border-radius: 22px;
+  background: #fffaf5;
+}
+
+.ministries-section .ministry-card-image {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.ministries-section .ministry-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ministries-section .ministry-card-content {
+  padding: 24px;
+}
+
+.ministries-section .ministry-card-content h3 {
+  line-height: 1.3;
+}
+
+.ministries-section .ministry-card-description {
+  margin-bottom: 0;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .ministries-section .ministries-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .ministries-section .ministries-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ministries-section .ministry-card-image {
+    height: 240px;
   }
 }
 
