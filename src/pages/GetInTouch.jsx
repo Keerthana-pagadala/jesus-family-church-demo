@@ -269,12 +269,25 @@ async function handleSubmit(event) {
                 <Phone size={22} />
               </div>
 
-              <div>
-                <h3>Call Us</h3>
-                <a href="tel:+61432248276">
-                  +61 432 248 276
-                </a>
-              </div>
+              
+<div>
+  <h3>Call Us</h3>
+
+  <a href="tel:0481010181">
+    0481 010 181
+  </a>
+  <br />
+
+  <a href="tel:0430027451">
+    0430 027 451
+  </a>
+  <br />
+
+  <a href="tel:+61432248276">
+    +61 432 248 276
+  </a>
+</div>
+
             </div>
 
             <div className="contact-info-item">

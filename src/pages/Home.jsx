@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { Menu, X, Globe } from 'lucide-react'
 import churchLogo from "../assets/churchlogo.jpeg"
 import worshipHome from "../assets/worshiphome.webp"
-import welcomeChurch from "../assets/welcomechurch.jpg"
+import welcomeChurch from "../assets/gallery/welcomepic.JPG";
 import DailyBibleVerse from "../components/DailyBibleVerse.jsx";
-import worshipPhoto from "../assets/homegallery/worship.jpg";
-import fellowshipPhoto from "../assets/homegallery/fellowship.jpg";
-import communityPhoto from "../assets/homegallery/community.jpg";
-import kidsMinistryPhoto from "../assets/homegallery/kids.webp";
+import worshipPhoto from "../assets/gallery/worship-new.JPG";
+import fellowshipPhoto from "../assets/gallery/fellowship-new.JPG";
+import communityPhoto from "../assets/gallery/community-new.JPG";
+import kidsMinistryPhoto from "../assets/gallery/kids-new.JPG";
 import youthMinistryPhoto from "../assets/gallery/youthmin.jpg";
 import womenMinistryPhoto from "../assets/gallery/womenmin.webp";
 import '../App.css'
@@ -693,22 +693,19 @@ function Home() {
               </div>
 
 
-              <div className="contact-item">
+              
+<div className="contact-item">
+  <div>
+    <strong>Contact Us</strong>
 
-                <div>
+    <p>
+      0481 010 181<br />
+      0430 027 451<br />
+      +61 432 248 276
+    </p>
+  </div>
+</div>
 
-                  <strong>
-                    Contact Us
-                  </strong>
-
-                  <p>
-                    +61 432 248 276<br />
-                    +61 432 361 918
-                  </p>
-
-                </div>
-
-              </div>
 
 
               <div className="contact-item">

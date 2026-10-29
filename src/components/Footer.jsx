@@ -104,8 +104,16 @@ function Footer() {
           <p>VIC 3074, Australia</p>
 
           <p className="footer-space">
-            📞 +61 432 248 276
-          </p>
+  📞 0481 010 181
+</p>
+
+<p className="footer-space">
+  📞 0430 027 451
+</p>
+
+<p className="footer-space">
+  📞 +61 432 248 276
+</p>
 
           <p>
             📧 jesusfamilychurchaustralia@gmail.com

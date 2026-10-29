@@ -99,6 +99,106 @@ const zionPhotos = Object.values(
     import: 'default',
   })
 )
+const churchFellowshipPhotos = Object.values(
+  import.meta.glob(
+    '../assets/gallery/church fellowship/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
+    {
+      eager: true,
+      query: '?url',
+      import: 'default',
+    }
+  )
+)
+
+
+const robertRoyPhotos = Object.values(
+  import.meta.glob('../assets/gallery/robert roy/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const christmasCarolsPhotos = Object.values(
+  import.meta.glob('../assets/gallery/christmas carols/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const baptismCeremonyPhotos = Object.values(
+  import.meta.glob('../assets/gallery/baptism ceremony/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const mizpahChurchPhotos = Object.values(
+  import.meta.glob('../assets/gallery/mizpah church/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const terrencePaulPhotos = Object.values(
+  import.meta.glob('../assets/gallery/terrence paul/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const emmanuelGollarPhotos = Object.values(
+  import.meta.glob('../assets/gallery/emmanuel gollar/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const ranjithJebaPhotos = Object.values(
+  import.meta.glob('../assets/gallery/ranjith jeba/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const jublinJosephPhotos = Object.values(
+  import.meta.glob('../assets/gallery/jublin joseph/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const samRajasuriarPhotos = Object.values(
+  import.meta.glob('../assets/gallery/sam rajasuriar/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const drPaulAngPhotos = Object.values(
+  import.meta.glob('../assets/gallery/dr paul ang/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
+const streetOutreachPhotos = Object.values(
+  import.meta.glob('../assets/gallery/street outreach/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+)
+
 
 /* =========================
    ALBUMS
@@ -134,7 +234,8 @@ function Gallery() {
       name: 'Gethsemane Gospel Church',
       location: 'Batticaloa, Sri Lanka',
       photoCount: gethsemanePhotos.length,
-      cover: gethsemanePhotos[0],
+     cover: '/src/assets/gallery/getsemane/gethsemane2.webp',
+     coverClass: 'gethsemane-cover',
       photos: gethsemanePhotos,
     },
 
@@ -153,7 +254,7 @@ function Gallery() {
       name: 'Jesus Lives Ministry',
       location: 'Colombo, Sri Lanka',
       photoCount: jesusLivesPhotos.length,
-      cover: jesusLivesPhotos[0],
+      cover: '/src/assets/gallery/jesus%20lives/jesus%20lives7.jpg',
       photos: jesusLivesPhotos,
     },
 
@@ -183,33 +284,33 @@ function Gallery() {
       name: 'Zion Church',
       location: 'Jaffna, Sri Lanka',
       photoCount: zionPhotos.length,
-      cover: zionPhotos[0],
+      cover: '/src/assets/gallery/zion/zion7.webp',
       photos: zionPhotos,
     },
 
     {
       title:
-        'Revival Meeting with Pastor Joel Thomasraj at Jesus Family Church Australia',
+        'Revival Meeting with Pastor Joel Thomasraj',
       name: 'Revival Meeting with Pastor Joel Thomasraj',
       location: 'Jesus Family Church Australia',
       photoCount: joelThomasrajPhotos.length,
-      cover: joelThomasrajPhotos[0],
+      cover: '/src/assets/gallery/joel%20thomasraj/joel9.jpg',
       photos: joelThomasrajPhotos,
     },
 
     {
       title:
-        'Revival Meeting with Pastor Roshan Mahesan at Jesus Family Church Australia',
+        'Revival Meeting with Pastor Roshan Mahesan',
       name: 'Revival Meeting with Pastor Roshan Mahesan',
       location: 'Jesus Family Church Australia',
       photoCount: roshanPhotos.length,
-      cover: roshanPhotos[0],
+      cover: '/src/assets/gallery/roshan/roshan8.jpg',
       photos: roshanPhotos,
     },
 
     {
       title:
-        'Revival Meeting with Pastor Benny Joshua at Jesus Family Church Australia',
+        'Revival Meeting with Pastor Benny Joshua',
       name: 'Revival Meeting with Pastor Benny Joshua',
       location: 'Jesus Family Church Australia',
       photoCount: bennyPhotos.length,
@@ -219,14 +320,122 @@ function Gallery() {
 
     {
       title:
-        'Revival Meeting with Rev. J. J. Sarangapany at Jesus Family Church Australia',
+        'Revival Meeting with Rev. J. J. Sarangapany',
       name: 'Revival Meeting with Rev. J. J. Sarangapany',
       location: 'Jesus Family Church Australia',
       photoCount: sarangapanyPhotos.length,
       cover: sarangapanyPhotos[0],
       photos: sarangapanyPhotos,
     },
-  ]
+     {
+      title: 'Church Fellowship Gathering',
+      name: 'Church Fellowship Gathering',
+      location: 'Jesus Family Church Australia',
+      photoCount: churchFellowshipPhotos.length,
+      cover: '/src/assets/gallery/church fellowship/XVNW8056.JPG',
+      photos: churchFellowshipPhotos,
+    },
+     {
+      title: 'Revival Meeting with Pastor Robert Roy at Jesus Family Church Australia',
+      name: 'Revival Meeting with Pastor Robert Roy',
+      location: 'Jesus Family Church Australia',
+      photoCount: robertRoyPhotos.length,
+      cover: '/src/assets/gallery/robert roy/IMG_2262.JPG',
+      photos: robertRoyPhotos,
+    },
+
+    {
+      title: '2025 Christmas Carols Service',
+      name: '2025 Christmas Carols Service',
+      location: 'Jesus Family Church Australia',
+      photoCount: christmasCarolsPhotos.length,
+      cover: '/src/assets/gallery/christmas carols/IMG_E9401.JPG',
+      photos: christmasCarolsPhotos,
+    },
+
+    {
+      title: 'Baptism Ceremony',
+      name: 'Baptism Ceremony',
+      location: 'Jesus Family Church Australia',
+      photoCount: baptismCeremonyPhotos.length,
+      cover: baptismCeremonyPhotos[0],
+      photos: baptismCeremonyPhotos,
+    },
+
+    {
+      title: 'Ministering at Mizpah Church in Colombo, Sri Lanka',
+      name: 'Ministering at Mizpah Church',
+      location: 'Colombo, Sri Lanka',
+      photoCount: mizpahChurchPhotos.length,
+      cover: mizpahChurchPhotos[0],
+      photos: mizpahChurchPhotos,
+    },
+
+    {
+      title: 'Revival Meeting with Bro Terrence Paul from Touch Ministries Global India',
+      name: 'Revival Meeting with Bro Terrence Paul',
+      location: 'Jesus Family Church Australia',
+      photoCount: terrencePaulPhotos.length,
+      cover: '/src/assets/gallery/terrence paul/IMG_1277.JPG',
+      photos: terrencePaulPhotos,
+    },
+
+    {
+      title: 'Revival Meeting with Pastor Emmanuel Gollar from Hosana Church Ministries India',
+      name: 'Revival Meeting with Pastor Emmanuel Gollar',
+      location: 'Jesus Family Church Australia',
+      photoCount: emmanuelGollarPhotos.length,
+      cover: '/src/assets/gallery/emmanuel gollar/IMG_2106.JPG',
+      photos: emmanuelGollarPhotos,
+    },
+
+    {
+      title: 'Revival Meeting with Pastor Ranjith Jeba from Blaze Evangelical Ministries India',
+      name: 'Revival Meeting with Pastor Ranjith Jeba',
+      location: 'Jesus Family Church Australia',
+      photoCount: ranjithJebaPhotos.length,
+      cover: ranjithJebaPhotos[0],
+      photos: ranjithJebaPhotos,
+    },
+
+    {
+      title: 'Revival Meeting with Ps Jublin Joseph from Shenayim Ministries India',
+      name: 'Revival Meeting with Ps Jublin Joseph',
+      location: 'Jesus Family Church Australia',
+      photoCount: jublinJosephPhotos.length,
+      cover: '/src/assets/gallery/jublin joseph/Front pic.JPG',
+      photos: jublinJosephPhotos,
+    },
+
+    {
+      title: 'Revival Meeting with Ps Sam Rajasuriar from AOG Jaffna Sri Lanka',
+      name: 'Revival Meeting with Ps Sam Rajasuriar',
+      location: 'Jesus Family Church Australia',
+      photoCount: samRajasuriarPhotos.length,
+      cover: '/src/assets/gallery/sam rajasuriar/Front Pic.JPG',
+      photos: samRajasuriarPhotos,
+    },
+
+    {
+      title: 'Revival Meeting with Dr Paul Ang from Paul Ang Global Vision Malaysia',
+      name: 'Revival Meeting with Dr Paul Ang',
+      location: 'Jesus Family Church Australia',
+      photoCount: drPaulAngPhotos.length,
+      cover: '/src/assets/gallery/dr paul ang/Front Pic.JPG',
+      photos: drPaulAngPhotos,
+    },
+
+    {
+      title: 'Street Outreach Evangelism',
+      name: 'Street Outreach Evangelism',
+      location: 'Jesus Family Church Australia',
+      photoCount: streetOutreachPhotos.length,
+     cover: '/src/assets/gallery/street outreach/IMG_6792.JPG',
+      photos: streetOutreachPhotos,
+    },
+
+  ];
+  
 
   /* =========================
      SELECTED ALBUM
@@ -275,14 +484,18 @@ function Gallery() {
 
               {selectedAlbum.photos.map((photo, index) => (
                 <div
-                  className="gallery-grid-item"
-                  key={index}
-                >
-                  <img
-                    src={photo}
-                    alt={`${selectedAlbum.name} - Photo ${index + 1}`}
-                  />
-                </div>
+  className={`gallery-grid-item ${
+    selectedAlbum.name === 'Gethsemane Gospel Church'
+      ? 'gethsemane-photo'
+      : ''
+  }`}
+  key={index}
+>
+  <img
+    src={photo}
+    alt={`${selectedAlbum.name} - Photo ${index + 1}`}
+  />
+</div>
               ))}
 
             </div>
@@ -371,9 +584,10 @@ function Gallery() {
 
                 {album.cover ? (
                   <img
-                    src={album.cover}
-                    alt={album.name}
-                  />
+  src={album.cover}
+  alt={album.name}
+  className={album.coverClass || ''}
+/>
                 ) : (
                   <div className="gallery-image-placeholder">
                     <span>

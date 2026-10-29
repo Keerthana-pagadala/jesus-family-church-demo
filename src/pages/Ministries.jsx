@@ -2,7 +2,8 @@
 import youthImage from "../assets/gallery/youthmin.jpg";
 import kidsImage from "../assets/gallery/kidsmin.webp";
 import womenImage from "../assets/gallery/womenmin.webp";
-import prayerWorshipImage from "../assets/prayerworship.jpg";
+import prayerWorshipImage from "../assets/gallery/prayer-worship-new.jpg.JPG";
+
 
 function Ministries() {
   const ministries = [

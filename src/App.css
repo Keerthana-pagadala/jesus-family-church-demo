@@ -292,6 +292,8 @@ button {
 
 .hero-content {
   position: relative;
+    width: 100%;
+  box-sizing: border-box;
 
   z-index: 2;
 
@@ -496,27 +498,40 @@ button {
 /* =========================================================
    WELCOME / ABOUT
 ========================================================= */
-
 .welcome-section {
-  max-width: 1250px;
-
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
-
-  padding: 125px 7%;
-
-  display: grid;
-
-  grid-template-columns: 1.1fr 0.9fr;
-
-  gap: 80px;
-
+  padding: 80px 7%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 35px;
+}
+.welcome-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
 }
 
-.welcome-content .section-label {
-  text-align: left;
+.welcome-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
+.welcome-content > p:not(.section-label) {
+  text-align: center;
+}
 .welcome-content h2 {
   margin-bottom: 25px;
 
@@ -1041,11 +1056,13 @@ button {
   color: #2b2528;
 }
 
+
 /* Highlighted heading words */
 .ministries-intro h2 span,
 .ministries-community h2 span {
   color: #b71c1c;
 }
+
 
 /* Normal paragraph text */
 .ministries-intro p,
@@ -1058,7 +1075,7 @@ button {
 .ministries-intro .section-label,
 .ministry-card-content p,
 .ministries-community .section-label {
-  color: #b71c1c;
+  color:#b71c1c;
 }
 
 /* Community section main heading */
@@ -3534,14 +3551,12 @@ button {
   min-height: 100vh;
 }
 
-
 /* =========================
    HERO
 ========================= */
 
 .gallery-hero {
   min-height: 380px;
-
   background:
     linear-gradient(
       rgba(55, 38, 32, 0.30),
@@ -3552,7 +3567,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   padding: 60px 20px;
 }
@@ -3566,21 +3580,16 @@ button {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
-
   margin: 0 0 14px;
-
   text-transform: uppercase;
 }
 
 .gallery-hero h1 {
   font-size: clamp(42px, 6vw, 70px);
-
   margin: 0;
-
   font-weight: 700;
   line-height: 1.1;
 }
-
 
 /* =========================
    INTRO
@@ -3588,36 +3597,25 @@ button {
 
 .gallery-intro {
   max-width: 900px;
-
   margin: 0 auto;
-
   padding: 80px 25px 55px;
-
   text-align: center;
 }
 
 .gallery-section-label {
   display: block;
-
   color: #c62828;
-
   font-size: 11px;
   font-weight: 700;
-
   letter-spacing: 2.8px;
-
   margin-bottom: 14px;
-
   text-transform: uppercase;
 }
 
 .gallery-intro h2 {
   font-size: clamp(30px, 4vw, 46px);
-
   margin: 0 0 18px;
-
   color: #3d3430;
-
   line-height: 1.2;
 }
 
@@ -3627,16 +3625,11 @@ button {
 
 .gallery-intro p {
   max-width: 720px;
-
   margin: 0 auto;
-
   color: #716762;
-
   font-size: 16px;
-
   line-height: 1.8;
 }
-
 
 /* =========================
    ALBUM SECTION
@@ -3644,20 +3637,18 @@ button {
 
 .gallery-albums {
   max-width: 1250px;
-
   margin: 0 auto;
-
   padding: 15px 25px 90px;
 }
 
 .gallery-albums-grid {
   display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, 300px));
+  justify-content: center;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-
 
 /* =========================
    ALBUM CARD
@@ -3665,82 +3656,57 @@ button {
 
 .gallery-album-card {
   background: #ffffff;
-
   border-radius: 20px;
-
   overflow: hidden;
-
   border: 1px solid #f0e4dd;
-
-  box-shadow:
-    0 8px 25px rgba(70, 45, 35, 0.07);
-
+  box-shadow: 0 8px 25px rgba(70, 45, 35, 0.07);
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease;
 }
 
 .gallery-album-card:hover {
-  transform: translateY(-8px);
-
-  box-shadow:
-    0 18px 40px rgba(70, 45, 35, 0.14);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(70, 45, 35, 0.12);
 }
-
 
 /* =========================
    ALBUM IMAGE
 ========================= */
 
 .gallery-album-image {
-  height: 245px;
-
+  height: 220px;
   position: relative;
-
   overflow: hidden;
-
   background: #f2f4f5;
 }
 
 .gallery-album-image img {
   width: 100%;
   height: 100%;
-
-  object-fit: cover;
-
+  object-fit: contain;
+  object-position: center;
   display: block;
-
-  transition:
-    transform 0.65s ease,
-    filter 0.4s ease;
+  transition: filter 0.4s ease;
 }
 
 .gallery-album-card:hover .gallery-album-image img {
-  transform: scale(1.08);
-
   filter: brightness(1.03);
 }
-
 
 /* Image gradient */
 
 .gallery-album-image::after {
   content: "";
-
   position: absolute;
-
   inset: 0;
-
-  background:
-    linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.30),
-      transparent 45%
-    );
-
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.18),
+    transparent 45%
+  );
   pointer-events: none;
 }
-
 
 /* =========================
    PHOTO COUNT
@@ -3748,30 +3714,18 @@ button {
 
 .gallery-photo-count {
   position: absolute;
-
-  right: 15px;
-  bottom: 15px;
-
+  right: 12px;
+  bottom: 12px;
   z-index: 2;
-
   background: rgba(255, 255, 255, 0.95);
-
   color: #c62828;
-
   padding: 8px 13px;
-
   border-radius: 30px;
-
   font-size: 11px;
-
   font-weight: 700;
-
   letter-spacing: 0.5px;
-
-  box-shadow:
-    0 4px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
-
 
 /* =========================
    PLACEHOLDER
@@ -3780,66 +3734,48 @@ button {
 .gallery-image-placeholder {
   width: 100%;
   height: 100%;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   background: #f2eee9;
-
   color: #c62828;
-
   font-weight: 600;
+  text-align: center;
+  padding: 15px;
 }
-
 
 /* =========================
    ALBUM CONTENT
 ========================= */
 
 .gallery-album-content {
-  padding: 25px 24px 27px;
+  padding: 22px 20px 24px;
 }
 
 .gallery-album-location {
   display: block;
-
   color: #c62828;
-
   font-size: 11px;
-
   font-weight: 700;
-
   letter-spacing: 1.6px;
-
   text-transform: uppercase;
-
   margin-bottom: 10px;
 }
 
 .gallery-album-content h3 {
   color: #3d3430;
-
-  font-size: 21px;
-
+  font-size: 20px;
   line-height: 1.35;
-
   margin: 0 0 10px;
-
   font-weight: 700;
 }
 
 .gallery-album-content p {
   color: #82766f;
-
   font-size: 14px;
-
   line-height: 1.65;
-
   margin: 0 0 21px;
 }
-
 
 /* =========================
    VIEW GALLERY BUTTON
@@ -3847,21 +3783,13 @@ button {
 
 .gallery-view-button {
   border: 1px solid #c62828;
-
   background: transparent;
-
   color: #c62828;
-
   padding: 10px 18px;
-
   border-radius: 25px;
-
   font-size: 13px;
-
   font-weight: 600;
-
   cursor: pointer;
-
   transition:
     background 0.3s ease,
     color 0.3s ease,
@@ -3871,15 +3799,10 @@ button {
 
 .gallery-view-button:hover {
   background: #c62828;
-
   color: white;
-
   transform: translateY(-2px);
-
-  box-shadow:
-    0 7px 18px rgba(198, 40, 40, 0.22);
+  box-shadow: 0 7px 18px rgba(198, 40, 40, 0.22);
 }
-
 
 /* =========================
    ALBUM DETAIL PAGE
@@ -3887,31 +3810,20 @@ button {
 
 .gallery-album-view {
   max-width: 1250px;
-
   margin: 0 auto;
-
   padding: 55px 25px 80px;
 }
 
 .gallery-back-button {
   border: none;
-
   background: #fcebed;
-
   color: #c62828;
-
   padding: 11px 19px;
-
   border-radius: 25px;
-
   font-size: 13px;
-
   font-weight: 600;
-
   cursor: pointer;
-
   margin-bottom: 35px;
-
   transition:
     background 0.3s ease,
     transform 0.25s ease;
@@ -3919,10 +3831,8 @@ button {
 
 .gallery-back-button:hover {
   background: #f7dfe2;
-
   transform: translateX(-3px);
 }
-
 
 /* =========================
    ALBUM HEADING
@@ -3930,42 +3840,30 @@ button {
 
 .gallery-album-heading {
   text-align: center;
-
   max-width: 850px;
-
   margin: 0 auto 45px;
 }
 
 .gallery-album-heading h2 {
   color: #3d3430;
-
   font-size: clamp(30px, 4vw, 46px);
-
   line-height: 1.2;
-
   margin: 0 0 15px;
 }
 
 .gallery-album-heading p {
   color: #82766f;
-
   font-size: 16px;
-
   line-height: 1.7;
-
   margin: 0 auto 12px;
 }
 
 .gallery-location {
   color: #c62828;
-
   font-size: 13px;
-
   font-weight: 600;
-
   margin-top: 12px;
 }
-
 
 /* =========================
    INDIVIDUAL PHOTO GRID
@@ -3973,48 +3871,34 @@ button {
 
 .gallery-grid {
   display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, minmax(0, 300px));
+  justify-content: center;
   gap: 22px;
 }
 
 .gallery-grid-item {
-  height: 280px;
-
+  height: 260px;
   overflow: hidden;
-
   border-radius: 16px;
-
   background: #f2f4f5;
-
-  box-shadow:
-    0 7px 20px rgba(70, 45, 35, 0.08);
-
+  box-shadow: 0 7px 20px rgba(70, 45, 35, 0.08);
   cursor: pointer;
-
   position: relative;
 }
 
 .gallery-grid-item img {
   width: 100%;
   height: 100%;
-
-  object-fit: cover;
-
+  object-fit: contain;
+  object-position: center;
   display: block;
-
-  transition:
-    transform 0.6s ease,
-    filter 0.4s ease;
+  transition: filter 0.4s ease;
 }
 
 .gallery-grid-item:hover img {
-  transform: scale(1.08);
-
+  transform: none;
   filter: brightness(1.04);
 }
-
 
 /* =========================
    MORE MOMENTS
@@ -4022,28 +3906,21 @@ button {
 
 .gallery-more-moments {
   text-align: center;
-
   padding: 70px 20px 10px;
 }
 
 .gallery-more-moments > span {
   color: #c62828;
-
   font-size: 11px;
-
   font-weight: 700;
-
   letter-spacing: 2.5px;
 }
 
 .gallery-more-moments h3 {
   color: #3d3430;
-
   font-size: clamp(25px, 3vw, 36px);
-
   margin: 12px 0 25px;
 }
-
 
 /* =========================
    BOTTOM CTA
@@ -4051,55 +3928,38 @@ button {
 
 .gallery-bottom {
   background: #ffe0cc;
-
   padding: 70px 25px;
-
   text-align: center;
 }
 
 .gallery-bottom > span {
   color: #c62828;
-
   font-size: 11px;
-
   font-weight: 700;
-
   letter-spacing: 2.5px;
 }
 
 .gallery-bottom h2 {
   color: #3d3430;
-
   font-size: clamp(28px, 4vw, 42px);
-
   margin: 12px 0 15px;
 }
 
 .gallery-bottom p {
   color: #6f625c;
-
   line-height: 1.7;
-
   max-width: 650px;
-
   margin: 0 auto 25px;
 }
 
 .gallery-visit-button {
   display: inline-block;
-
   background: #c62828;
-
   color: white;
-
   text-decoration: none;
-
   padding: 13px 24px;
-
   border-radius: 30px;
-
   font-weight: 600;
-
   transition:
     background 0.3s ease,
     transform 0.25s ease,
@@ -4108,33 +3968,22 @@ button {
 
 .gallery-visit-button:hover {
   background: #a91f1f;
-
   transform: translateY(-2px);
-
-  box-shadow:
-    0 8px 20px rgba(198, 40, 40, 0.22);
+  box-shadow: 0 8px 20px rgba(198, 40, 40, 0.22);
 }
-
 
 /* =========================
    GALLERY RESPONSIVE
 ========================= */
 
-@media (max-width: 900px) {
-
-  .gallery-albums-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+@media (max-width: 1000px) {
+  .gallery-albums-grid,
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 300px));
   }
-
 }
 
-
-@media (max-width: 600px) {
-
+@media (max-width: 650px) {
   .gallery-hero {
     min-height: 300px;
   }
@@ -4147,22 +3996,18 @@ button {
     padding: 15px 18px 60px;
   }
 
-  .gallery-albums-grid {
-    grid-template-columns: 1fr;
-
-    gap: 22px;
-  }
-
+  .gallery-albums-grid,
   .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-grid-item {
-    height: 260px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
   }
 
   .gallery-album-image {
     height: 230px;
+  }
+
+  .gallery-grid-item {
+    height: 260px;
   }
 
   .gallery-album-content {
@@ -4177,6 +4022,29 @@ button {
     font-size: 30px;
   }
 
+  .gallery-album-view {
+    padding: 35px 18px 60px;
+  }
+}
+
+/* =========================
+   GETHSEMANE PHOTO SAFETY
+========================= */
+
+.gallery-album-image img.gethsemane-cover {
+  object-fit: contain;
+  object-position: center;
+  background: #f2f4f5;
+}
+
+.gallery-grid-item.gethsemane-photo img {
+  object-fit: contain;
+  object-position: center;
+  background: #f2f4f5;
+}
+
+.gallery-grid-item.gethsemane-photo:hover img {
+  transform: none;
 }
 /* =========================
    MINISTRIES PAGE
@@ -4241,11 +4109,12 @@ button {
 
 .ministries-label {
   display: block;
-  color: #c62828;
+  color: #ffffff;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2.8px;
   margin-bottom: 14px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .ministries-intro h2 {
@@ -6035,7 +5904,7 @@ button {
 
   background:
     linear-gradient(rgba(40, 30, 25, 0.42), rgba(40, 30, 25, 0.42)),
-    url("./assets/gallery/jesus.jpg");
+    url("./assets/gallery/beliefhero1.jpg");
 
   background-size: cover;
   background-position: center;
@@ -8470,3 +8339,29 @@ button {
   }
 }
 
+/* Fix Explore Our Ministries button visibility */
+.get-in-touch-page .ministries-contact-button {
+  color: #ffffff !important;
+  background-color: #c62828;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 26px;
+  border-radius: 7px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.get-in-touch-page .ministries-contact-button:hover {
+  color: #ffffff !important;
+  background-color: #a91f1f;
+}
+/* Fix ministry images on laptop and desktop */
+.ministry-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}

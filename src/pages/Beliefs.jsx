@@ -3,6 +3,7 @@ import spiritImage from "../assets/gallery/sprit.jpg";
 import bibleImage from "../assets/gallery/bible.jpg";
 import humansImage from "../assets/gallery/humans.jpg";
 import salvationImage from "../assets/gallery/salvation.jpg";
+import beliefHeroImage from "../assets/gallery/beliefhero1.jpg";
 
 function Beliefs() {
   return (

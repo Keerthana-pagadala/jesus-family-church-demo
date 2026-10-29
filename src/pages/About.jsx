@@ -98,9 +98,11 @@ function About() {
         <div className="mission-card-content">
           <h3>Growing Churches</h3>
 
-          <p>
-            To develop five branch churches across Australia.
-          </p>
+          
+<p>
+  To develop churches across Australia.
+</p>
+
         </div>
       </div>
 
@@ -111,9 +113,11 @@ function About() {
         <div className="mission-card-content">
           <h3>Supporting Churches</h3>
 
-          <p>
-            To establish and support churches across Sri Lanka and India.
-          </p>
+          
+<p>
+  To establish and support churches overseas.
+</p>
+
         </div>
       </div>
 
@@ -166,7 +170,9 @@ function About() {
         <div className="about-container">
 
           <div className="section-heading">
-            <p className="section-label">MESSAGE FROM THE PASTOR</p>
+            
+<p className="section-label">MESSAGE FROM THE SENIOR PASTOR AND FOUNDER</p>
+
             <h2>A Message of Faith & Purpose</h2>
           </div>
 
@@ -261,10 +267,12 @@ function About() {
                 the Lord Jesus Christ.
               </p>
 
-              <p className="pastor-signature">
-                In Christ,<br />
-                <strong>Pastor Edward Wesley</strong>
-              </p>
+              
+<p className="pastor-signature">
+  In Christ,<br />
+  <strong>Senior Pastor and Founder Edward Wesley</strong>
+</p>
+
 
             </div>
 
