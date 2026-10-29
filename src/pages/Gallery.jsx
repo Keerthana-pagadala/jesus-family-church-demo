@@ -235,7 +235,7 @@ function Gallery() {
       location: 'Batticaloa, Sri Lanka',
       photoCount: gethsemanePhotos.length,
      
-    cover: gethsemanePhotos.find((photo) => photo.toLowerCase().includes('gethsemane2.webp')) || gethsemanePhotos[0],
+   cover: gethsemanePhotos.find((photo) => photo.toLowerCase().includes('gethsemane2.webp')) || gethsemanePhotos[0],
 
      coverClass: 'gethsemane-cover',
       photos: gethsemanePhotos,
@@ -256,7 +256,7 @@ function Gallery() {
       name: 'Jesus Lives Ministry',
       location: 'Colombo, Sri Lanka',
       photoCount: jesusLivesPhotos.length,
-      cover: jesusLivesPhotos.find((photo) => photo.toLowerCase().includes('jesus lives7.jpg')) || jesusLivesPhotos[0],
+      cover: jesusLivesPhotos.find((photo) => decodeURIComponent(photo).toLowerCase().includes('jesus lives7.jpg')) || jesusLivesPhotos[0],
       photos: jesusLivesPhotos,
     },
 
