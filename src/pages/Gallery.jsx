@@ -297,7 +297,10 @@ function Gallery() {
       name: 'Revival Meeting with Pastor Joel Thomasraj',
       location: 'Jesus Family Church Australia',
       photoCount: joelThomasrajPhotos.length,
-      cover: joelThomasrajPhotos.find((photo) => photo.toLowerCase().includes('joel9.jpg')) || joelThomasrajPhotos[0],
+      cover: new URL(
+  '../assets/gallery/joel thomasraj/joel9.jpg',
+  import.meta.url
+).href,
       photos: joelThomasrajPhotos,
     },
 
@@ -307,7 +310,10 @@ function Gallery() {
       name: 'Revival Meeting with Pastor Roshan Mahesan',
       location: 'Jesus Family Church Australia',
       photoCount: roshanPhotos.length,
-      cover: roshanPhotos.find((photo) => photo.toLowerCase().includes('roshan8.jpg')) || roshanPhotos[0],
+      cover: new URL(
+  '../assets/gallery/roshan/roshan8.jpg',
+  import.meta.url
+).href,
       photos: roshanPhotos,
     },
 
@@ -335,8 +341,7 @@ function Gallery() {
       name: 'Church Fellowship Gathering',
       location: 'Jesus Family Church Australia',
       photoCount: churchFellowshipPhotos.length,
-      cover: churchFellowshipPhotos.find((photo) => photo.toLowerCase().includes('xvnw8056.jpg')) || churchFellowshipPhotos[0],
-
+     cover: new URL('../assets/gallery/church fellowship/XVNW8056.JPG', import.meta.url).href,
       photos: churchFellowshipPhotos,
     },
      {
@@ -344,8 +349,10 @@ function Gallery() {
       name: 'Revival Meeting with Pastor Robert Roy',
       location: 'Jesus Family Church Australia',
       photoCount: robertRoyPhotos.length,
-     cover: robertRoyPhotos.find((photo) => photo.toLowerCase().includes('img_2262.jpg')) || robertRoyPhotos[0],
-
+    cover: new URL(
+  '../assets/gallery/robert roy/IMG_2262.JPG',
+  import.meta.url
+).href,
       photos: robertRoyPhotos,
     },
 
@@ -354,7 +361,10 @@ function Gallery() {
       name: '2025 Christmas Carols Service',
       location: 'Jesus Family Church Australia',
       photoCount: christmasCarolsPhotos.length,
-      cover: christmasCarolsPhotos.find((photo) => photo.toLowerCase().includes('img_e9401.jpg')) || christmasCarolsPhotos[0],
+      cover: new URL(
+  '../assets/gallery/christmas carols/IMG_E9401.JPG',
+  import.meta.url
+).href,
       photos: christmasCarolsPhotos,
     },
 
@@ -418,7 +428,10 @@ function Gallery() {
       name: 'Revival Meeting with Ps Sam Rajasuriar',
       location: 'Jesus Family Church Australia',
       photoCount: samRajasuriarPhotos.length,
-      cover: samRajasuriarPhotos.find((photo) => photo.toLowerCase().includes('front pic.jpg')) || samRajasuriarPhotos[0],
+      cover: new URL(
+  '../assets/gallery/sam rajasuriar/Front Pic.JPG',
+  import.meta.url
+).href,
       photos: samRajasuriarPhotos,
     },
 
@@ -427,7 +440,10 @@ function Gallery() {
       name: 'Revival Meeting with Dr Paul Ang',
       location: 'Jesus Family Church Australia',
       photoCount: drPaulAngPhotos.length,
-      cover: drPaulAngPhotos.find((photo) => photo.toLowerCase().includes('front pic.jpg')) || drPaulAngPhotos[0],
+      cover: new URL(
+  '../assets/gallery/dr paul ang/Front Pic.JPG',
+  import.meta.url
+).href,
       photos: drPaulAngPhotos,
     },
 
@@ -436,7 +452,10 @@ function Gallery() {
       name: 'Street Outreach Evangelism',
       location: 'Jesus Family Church Australia',
       photoCount: streetOutreachPhotos.length,
-      cover: streetOutreachPhotos.find((photo) => photo.toLowerCase().includes('img_6792.jpg')) || streetOutreachPhotos[0],
+      cover: new URL(
+  '../assets/gallery/street outreach/IMG_6792.JPG',
+  import.meta.url
+).href,
       photos: streetOutreachPhotos,
     },
 
