@@ -4,8 +4,9 @@ import { useState } from 'react'
    LOAD PHOTOS FROM FOLDERS
    ========================= */
 
+
 const batticoaloaPhotos = Object.values(
-  import.meta.glob('../assets/gallery/batticoaloa/**/*', {
+  import.meta.glob('../assets/gallery/Batticoaloa/*', {
     eager: true,
     query: '?url',
     import: 'default',
