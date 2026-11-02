@@ -284,7 +284,7 @@ async function handleSubmit(event) {
   <br />
 
   <a href="tel:+61432248276">
-    +61 432 248 276
+    0432 248 276
   </a>
 </div>
 
