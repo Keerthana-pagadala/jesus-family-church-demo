@@ -105,11 +105,10 @@ function Home() {
 
     <div className="welcome-image">
 
-      <img
-        src={welcomeChurch}
-        alt="Jesus Family Church Australia"
-      />
-
+     <img
+  src={welcomeChurch}
+  alt="Church members gathering at Jesus Family Church Australia in Melbourne"
+/>
     </div>
 
   </div>
@@ -369,8 +368,11 @@ function Home() {
     {/* Kids Ministry */}
     <div className="ministry-card">
       <div className="ministry-card-image">
-        <img src={kidsMinistryPhoto} alt="Children participating in Kids Ministry" />
-      </div>
+  <img
+    src={kidsMinistryPhoto}
+    alt="Children participating in the Kids Ministry at Jesus Family Church Australia"
+  />
+</div>
 
       <div className="ministry-card-content">
         <h3>Kids Ministry</h3>
@@ -384,8 +386,11 @@ function Home() {
     {/* Youth Ministry */}
     <div className="ministry-card">
       <div className="ministry-card-image">
-        <img src={youthMinistryPhoto} alt="Young people participating in Youth Ministry" />
-      </div>
+  <img
+    src={youthMinistryPhoto}
+    alt="Young people participating in the Youth Ministry at Jesus Family Church Australia"
+  />
+</div>
 
       <div className="ministry-card-content">
         <h3>Youth Ministry</h3>
@@ -399,7 +404,7 @@ function Home() {
     {/* Men & Women Ministry */}
     <div className="ministry-card">
       <div className="ministry-card-image">
-        <img src={womenMinistryPhoto} alt="Church members gathering for fellowship" />
+        <img src={womenMinistryPhoto} alt="Church members gathering for fellowship at Jesus Family Church Australia" />
       </div>
 
       <div className="ministry-card-content">
@@ -596,7 +601,7 @@ function Home() {
           <div className="gallery-item">
             <img
   src={communityPhoto}
-  alt="Jesus Family Church Australia community gathering"
+  alt="Members of Jesus Family Church Australia gathering together as a community"
   loading="lazy"
 />
 
@@ -609,7 +614,7 @@ function Home() {
           <div className="gallery-item">
             <img
   src={kidsMinistryPhoto}
-  alt="Children participating in church Sunday School"
+  alt="Children participating in Sunday School at Jesus Family Church Australia"
   loading="lazy"
 />
 

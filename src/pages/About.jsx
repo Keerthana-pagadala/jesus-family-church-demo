@@ -61,11 +61,11 @@ function About() {
           </div>
 
           <div className="about-image">
-            <img
-              src={visionMissionImage}
-              alt="Jesus Family Church worship and mission"
-            />
-          </div>
+  <img
+    src={visionMissionImage}
+    alt="Worship and community life at Jesus Family Church Australia"
+  />
+</div>
 
         </div>
       </section>
@@ -181,7 +181,7 @@ function About() {
             <div className="pastor-image">
               <img
                 src={pastorImage}
-                alt="Pastor Edward Wesley - Jesus Family Church Australia"
+                alt="Pastor Edward Wesley of Jesus Family Church Australia"
               />
             </div>
 

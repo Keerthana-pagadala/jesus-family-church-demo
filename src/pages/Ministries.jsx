@@ -110,11 +110,10 @@ function Ministries() {
               >
 
                 <div className="ministry-card-image">
-
-                  <img
-                    src={ministry.image}
-                    alt={ministry.title}
-                  />
+<img
+  src={ministry.image}
+  alt={ministry.title}
+/>
 
                   <span className="ministry-card-number">
                     {ministry.number}

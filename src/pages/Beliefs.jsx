@@ -106,11 +106,11 @@ function Beliefs() {
         <div className="beliefs-container belief-two-column">
 
           <div className="belief-image">
-            <img
-              src={jesusImage}
-              alt="Jesus Christ"
-            />
-          </div>
+  <img
+    src={jesusImage}
+    alt="Illustration of Jesus Christ representing the Christian faith"
+  />
+</div>
 
           <div className="belief-content">
 
@@ -220,12 +220,11 @@ function Beliefs() {
           </div>
 
           <div className="belief-image">
-            <img
-              src={spiritImage}
-              alt="The Holy Spirit"
-            />
-          </div>
-
+  <img
+    src={spiritImage}
+    alt="Image representing the Holy Spirit in Christian faith"
+  />
+</div>
         </div>
       </section>
 
@@ -239,7 +238,7 @@ function Beliefs() {
           <div className="belief-image">
             <img
               src={bibleImage}
-              alt="The Holy Bible"
+              alt="The Holy Bible, the foundation of Christian faith"
             />
           </div>
 
