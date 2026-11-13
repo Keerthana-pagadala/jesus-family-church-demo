@@ -424,137 +424,108 @@ function Home() {
     </a>
   </div>
 </section>
+
 {/* Sermons Section */}
 <section className="sermons-section" id="sermons">
+
   <div className="section-heading">
-  <p className="section-label">WATCH & LISTEN</p>
+    <p className="section-label">WATCH & LISTEN</p>
 
-  <h2>
-    <span>Sermons</span>
-  </h2>
+    <h2>
+      <span>Sermons</span>
+    </h2>
 
-  <p>
-    Be encouraged by God's Word wherever you are.
-    Watch and listen to messages from our church family.
-  </p>
-</div>
+    <p>
+      Be encouraged by God's Word wherever you are.
+      Watch and listen to messages from our church family.
+    </p>
+  </div>
 
-        <div className="sermon-cards">
-          {/* Sermon 1 */}
-          <div className="sermon-card">
-            <a
-              className="sermon-image"
-              href="https://www.youtube.com/watch?v=tWIUkTGyokU"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Watch the latest Sunday sermon"
-              style={{
-                backgroundImage:
-                  "url(https://img.youtube.com/vi/tWIUkTGyokU/hqdefault.jpg)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className="play-icon">▶</div>
-            </a>
+  <div className="sermon-cards">
 
-            <div className="sermon-content">
-              <p className="sermon-category">SUNDAY MESSAGE</p>
-              <h3>Walking by Faith</h3>
-              <p className="sermon-speaker">Sunday Worship Service</p>
-              <p className="sermon-date">October 2026</p>
+    {/* Latest Sermon */}
+    <div className="sermon-card">
 
-              <a
-                className="sermon-button"
-                href="https://www.youtube.com/watch?v=tWIUkTGyokU"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Watch Sermon →
-              </a>
-            </div>
-          </div>
+      <div className="sermon-image">
+        <iframe
+          src="https://www.youtube.com/embed/qQ9tX8mbLJo"
+          title="Latest Sunday Sermon"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
 
-          {/* Sermon 2 */}
-          <div className="sermon-card">
-            <a
-              className="sermon-image"
-              href="https://www.youtube.com/watch?v=JO7U4NQDGLE"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Watch another church sermon"
-              style={{
-                backgroundImage:
-                  "url(https://img.youtube.com/vi/JO7U4NQDGLE/hqdefault.jpg)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className="play-icon">▶</div>
-            </a>
+      <div className="sermon-content">
+        <p className="sermon-category">LATEST SERMON</p>
+        <h3>Latest Sunday Sermon</h3>
+        <p className="sermon-speaker">
+          Jesus Family Church Australia
+        </p>
+        <p className="sermon-date">2026</p>
+      </div>
 
-            <div className="sermon-content">
-              <p className="sermon-category">SUNDAY MESSAGE</p>
-              <h3>Growing Together in Christ</h3>
-              <p className="sermon-speaker">Sunday Worship Service</p>
-              <p className="sermon-date">2026</p>
+    </div>
 
-              <a
-                className="sermon-button"
-                href="https://www.youtube.com/watch?v=JO7U4NQDGLE"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Watch Sermon →
-              </a>
-            </div>
-          </div>
+    {/* Previous Sermon 1 */}
+    <div className="sermon-card">
 
-          {/* Sermon 3 */}
-          <div className="sermon-card">
-            <a
-              className="sermon-image"
-              href="https://www.youtube.com/watch?v=MZ6cl7vYjKA"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Watch a special church message"
-              style={{
-                backgroundImage:
-                  "url(https://img.youtube.com/vi/MZ6cl7vYjKA/hqdefault.jpg)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className="play-icon">▶</div>
-            </a>
+      <div className="sermon-image">
+        <iframe
+          src="https://www.youtube.com/embed/knjwQ3aqL9I"
+          title="Church Sermon"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
 
-            <div className="sermon-content">
-              <p className="sermon-category">SPECIAL MESSAGE</p>
-              <h3>A Church Family for Everyone</h3>
-              <p className="sermon-speaker">
-                Jesus Family Church Australia
-              </p>
-              <p className="sermon-date">2026</p>
+      <div className="sermon-content">
+        <p className="sermon-category">SUNDAY MESSAGE</p>
+        <h3>Church Sermon</h3>
+        <p className="sermon-speaker">
+          Jesus Family Church Australia
+        </p>
+        <p className="sermon-date">2026</p>
+      </div>
 
-              <a
-                className="sermon-button"
-                href="https://www.youtube.com/watch?v=MZ6cl7vYjKA"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Watch Sermon →
-              </a>
-            </div>
-          </div>
-        </div>
+    </div>
 
-        <div className="sermon-action">
-          <a className="primary-button" href="/sermons">
-            View All Sermons →
-          </a>
-        </div>
-      </section>
-  
+    {/* Previous Sermon 2 */}
+    <div className="sermon-card">
+
+      <div className="sermon-image">
+        <iframe
+          src="https://www.youtube.com/embed/9ww0A6BGsUU"
+          title="Church Sermon"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      <div className="sermon-content">
+        <p className="sermon-category">SUNDAY MESSAGE</p>
+        <h3>Church Sermon</h3>
+        <p className="sermon-speaker">
+          Jesus Family Church Australia
+        </p>
+        <p className="sermon-date">2026</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div className="sermon-action">
+    <a className="primary-button" href="/sermons">
+      View All Sermons →
+    </a>
+  </div>
+
+</section>
+
+
       {/* Gallery Section */}
       <section className="gallery-section" id="gallery">
         <div className="section-heading">
