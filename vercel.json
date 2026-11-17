@@ -1,17 +1,18 @@
 
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "routes": [
     {
       "handle": "filesystem"
     },
     {
-      "src": "^/wp-includes/.*",
-      "status": 404,
-      "dest": "/404.html"
+      "src": "^/(about|christian-beliefs|ministries|whats-happening|sermons|gallery|give|prayer-request|get-in-touch)/?$",
+      "dest": "/index.html"
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "src": "^/.*$",
+      "status": 404,
+      "dest": "/404.html"
     }
   ]
 }
