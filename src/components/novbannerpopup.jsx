@@ -1,7 +1,8 @@
 
+
 import { useState, useEffect } from 'react';
 import './novbannerpopup.css';
-import pastorBanner from '../assets/gallery/churchbanner.jpeg';
+import pastorBanner from '../assets/gallery/new banner.jpeg';
 
 function NovBannerPopup() {
   const [isOpen, setIsOpen] = useState(false);

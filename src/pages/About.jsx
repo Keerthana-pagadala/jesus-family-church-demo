@@ -1,4 +1,4 @@
-import pastorImage from "../assets/gallery/pastor.png";
+import pastorImage from "../assets/gallery/new pastorimg.jpeg";
 import visionMissionImage from "../assets/visionmission.jpg";
 import aboutImage from "../assets/gallery/about.jpg";
 function About() {

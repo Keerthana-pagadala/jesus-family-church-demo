@@ -4,7 +4,7 @@ function Sermons() {
     title: 'Latest Sunday Sermon',
     speaker: 'Jesus Family Church Australia',
     date: '2026',
-    videoId: 'qQ9tX8mbLJo',
+    videoId: 'ijho-4xba-I',
   }
 
   const previousSermons = [
