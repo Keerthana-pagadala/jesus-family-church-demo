@@ -19,11 +19,11 @@ import PrayerRequest from "./pages/PrayerRequest";
 import GetInTouch from "./pages/GetInTouch.jsx";
 
 const seoData = {
-  "/": {
-    title: "Jesus Family Church Australia | Christian Church in Melbourne",
-    description:
-      "Welcome to Jesus Family Church Australia, a multicultural Christian church in Thomastown, Melbourne. Join us for worship, prayer, fellowship and spiritual growth."
-  },
+ "/": {
+  title: "Jesus Family Church Australia | Indian & Multicultural Church in Melbourne",
+  description:
+    "Welcome to Jesus Family Church Australia, a multicultural Christian church in Thomastown, Melbourne. Join us for Sunday worship, prayer and fellowship in Telugu, Tamil, Malayalam, Hindi, English and Sinhala."
+},
   "/about": {
     title: "About Us | Jesus Family Church Australia",
     description:
@@ -102,6 +102,20 @@ function SEOManager() {
     }
 
     ogTitle.setAttribute("content", page.title);
+    // Update canonical URL for each page
+const canonicalUrl = `https://www.jesusfamilychurchaustralia.org${
+  location.pathname === "/" ? "/" : location.pathname
+}`;
+
+let canonical = document.querySelector('link[rel="canonical"]');
+
+if (!canonical) {
+  canonical = document.createElement("link");
+  canonical.setAttribute("rel", "canonical");
+  document.head.appendChild(canonical);
+}
+
+canonical.setAttribute("href", canonicalUrl);
 
     let ogDescription = document.querySelector(
       'meta[property="og:description"]'
@@ -114,7 +128,21 @@ function SEOManager() {
     }
 
     ogDescription.setAttribute("content", page.description);
-  }, [location.pathname]);
+
+// Update Open Graph URL for each page
+let ogUrl = document.querySelector('meta[property="og:url"]');
+
+if (!ogUrl) {
+  ogUrl = document.createElement("meta");
+  ogUrl.setAttribute("property", "og:url");
+  document.head.appendChild(ogUrl);
+}
+
+ogUrl.setAttribute(
+  "content",
+  `https://www.jesusfamilychurchaustralia.org${location.pathname === "/" ? "/" : location.pathname}`
+);
+}, [location.pathname]);
 
   return null;
 }
